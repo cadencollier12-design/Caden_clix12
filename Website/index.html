@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caden_clix12 - Premium Sports Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="loading-text">Caden_clix12</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Caden_clix12</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Caden_clix12</span>
+                <span class="title-subtitle">Premium Sports Photography</span>
+            </h1>
+            <p class="hero-description">
+                Capturing every moment of athletic excellence with professional precision and artistic vision
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">View Services</a>
+                <a href="#gallery" class="btn btn-secondary">See Gallery</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="floating-card" data-sport="football">
+                    <i class="fas fa-football-ball"></i>
+                    <span>Football</span>
+                </div>
+                <div class="floating-card" data-sport="volleyball">
+                    <i class="fas fa-volleyball-ball"></i>
+                    <span>Volleyball</span>
+                </div>
+                <div class="floating-card" data-sport="soccer">
+                    <i class="fas fa-futbol"></i>
+                    <span>Soccer</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Professional photography packages tailored for every sport</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-sport="football">
+                    <div class="service-icon">
+                        <i class="fas fa-football-ball"></i>
+                    </div>
+                    <h3>Football Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$20</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$100</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Capture every touchdown, tackle, and triumphant moment with professional action shots
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Action Shots</span>
+                        <span class="feature">Player Portraits</span>
+                        <span class="feature">Team Photos</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='football.html'">Learn More</button>
+                </div>
+
+                <div class="service-card" data-sport="volleyball">
+                    <div class="service-icon">
+                        <i class="fas fa-volleyball-ball"></i>
+                    </div>
+                    <h3>Volleyball Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$15</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$85</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Document the intensity and teamwork of volleyball matches with dynamic photography
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Spike Moments</span>
+                        <span class="feature">Team Coordination</span>
+                        <span class="feature">Defensive Plays</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='volleyball.html'">Learn More</button>
+                </div>
+
+                <div class="service-card" data-sport="soccer">
+                    <div class="service-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Men's Soccer Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$15</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$85</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Showcase the skill and passion of soccer players with professional game coverage
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Goal Scoring</span>
+                        <span class="feature">Ball Control</span>
+                        <span class="feature">Team Strategy</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='soccer.html'">Learn More</button>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-subtitle">Explore our collection of stunning sports photography</p>
+            </div>
+            
+            
+            
+            <div class="gallery-grid">
+                <a class="gallery-item" href="football.html" data-sport="football" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="Football photo 1.png" alt="Football photo 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Football Action</h3>
+                        <p>Dynamic game moments</p>
+                    </div>
+                </a>
+                
+                <a class="gallery-item" href="volleyball.html" data-sport="volleyball" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="volleyball 1.png" alt="volleyball 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Volleyball Action</h3>
+                        <p>Team coordination shots</p>
+                    </div>
+                </a>
+                
+                <a class="gallery-item" href="soccer.html" data-sport="soccer" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="Soccer 1.png" alt="Soccer 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Soccer Action</h3>
+                        <p>Skill and passion</p>
+                    </div>
+                </a>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to capture your sports moments? Let's connect!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/caden_clix12" target="_blank" class="contact-link">
+                                @caden_clix12
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:cadencollier12@gmail.com" class="contact-link">
+                                cadencollier12@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Booking</h3>
+                            <p>Available for events and seasons</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="sport" name="sport" required>
+                                <option value="">Select Sport</option>
+                                <option value="football">Football</option>
+                                <option value="volleyball">Volleyball</option>
+                                <option value="soccer">Soccer</option>
+                                <option value="hockey">Hockey</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your photography needs" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Caden_clix12</h3>
+                    <p>Premium Sports Photography</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/caden_clix12" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:cadencollier12@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Caden_clix12 Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
