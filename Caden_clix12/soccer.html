@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Soccer Photography - Caden_clix12</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: #ffffff;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(30, 58, 138, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 48px;
+            font-weight: 800;
+            text-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        .nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 12px 24px;
+            border: 2px solid #3b82f6;
+            border-radius: 25px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+
+        
+        .nav a:hover {
+            background: #3b82f6;
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+        
+        .section {
+            padding: 80px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .section h2 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            text-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .photo-item {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .photo-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+            transition: left 0.6s;
+        }
+        
+        .photo-item:hover::before {
+            left: 100%;
+        }
+        
+        .photo-item:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3);
+            border-color: #3b82f6;
+        }
+        
+        .photo-placeholder {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #3b82f6;
+            position: relative;
+        }
+        
+        .photo-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            opacity: 0.1;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .photo-item:hover .photo-placeholder::before {
+            opacity: 0.2;
+        }
+        
+        .photo-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 15px;
+        }
+        
+        .photo-placeholder img {
+            position: relative;
+            z-index: 2;
+            opacity: 1 !important;
+            transform: none !important;
+        }
+        
+        .pricing-info {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            max-width: 700px;
+            margin: 40px auto;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .pricing-info:hover::before {
+            opacity: 1;
+        }
+        
+        .price {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 20px 0;
+            display: block;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #93c5fd;
+            margin: 25px 0;
+            line-height: 1.8;
+        }
+        
+        .back-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .back-button a {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+            color: #ffffff;
+            padding: 18px 36px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .back-button a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+        
+        .back-button a:hover::before {
+            left: 100%;
+        }
+        
+        .back-button a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5);
+        }
+        
+        .footer {
+            background: rgba(15, 23, 42, 0.95);
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+            border-top: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Animations */
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Animation classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .fade-in-left {
+            animation: slideInLeft 1s ease forwards;
+        }
+        
+        .fade-in-right {
+            animation: slideInRight 1s ease forwards;
+        }
+        
+        /* Hover effects */
+        .photo-item img {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .photo-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Loading states */
+        .loading {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 1.5s infinite;
+        }
+        
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                font-size: 36px;
+                padding: 20px 0;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            
+            .section {
+                padding: 30px 15px;
+            }
+            
+            .section h2 {
+                font-size: 28px;
+            }
+            
+            .photo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+            }
+            
+            .pricing-info {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .price {
+                font-size: 24px;
+            }
+            
+            .description {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                font-size: 28px;
+                padding: 15px 0;
+            }
+            
+            .nav {
+                padding: 10px 0;
+            }
+            
+            .nav a {
+                display: block;
+                margin: 5px auto;
+                max-width: 200px;
+            }
+            
+            .section {
+                padding: 20px 10px;
+            }
+            
+            .section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .photo-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .pricing-info {
+                padding: 15px;
+                margin: 15px auto;
+            }
+            
+            .price {
+                font-size: 20px;
+            }
+            
+            .description {
+                font-size: 14px;
+            }
+            
+            .back-button a {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        ⚽ Men's Soccer Photography
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="#photos">Photos</a>
+        <a href="#pricing">Pricing</a>
+    </nav>
+    
+    <!-- Photos Section -->
+    <section id="photos" class="section">
+        <h2>Soccer Action Shots</h2>
+        <p style="text-align: center; font-size: 18px; margin-bottom: 30px;">
+            Showcasing the skill and passion of soccer players
+        </p>
+        
+        <div class="photo-grid">
+            <div class="photo-item">
+                <div class="photo-placeholder">
+                    <img src="soccer-1.png" alt="Soccer 1" style="width:100%; height:100%; object-fit:cover; border-radius:10px; display:block;" />
+                </div>
+                <h3>Game Action</h3>
+            </div>
+            
+            <div class="photo-item">
+                <div class="photo-placeholder">
+                    <img src="soccer-2.png" alt="Soccer 2" style="width:100%; height:100%; object-fit:cover; border-radius:10px; display:block;" />
+                </div>
+                <h3>Game Action</h3>
+            </div>
+            
+            <div class="photo-item">
+                <div class="photo-placeholder">
+                    <img src="soccer-3.png" alt="Soccer 3" style="width:100%; height:100%; object-fit:cover; border-radius:10px; display:block;" />
+                </div>
+                <h3>Player Portraits</h3>
+            </div>
+            
+            <div class="photo-item">
+                <div class="photo-placeholder">
+                    <img src="soccer-4.png" alt="Soccer 4" style="width:100%; height:100%; object-fit:cover; border-radius:10px; display:block;" />
+                </div>
+                <h3>Player Portraits</h3>
+            </div>
+
+            <div class="photo-item">
+                <div class="photo-placeholder">
+                    <img src="soccer-5.png" alt="Soccer 5" style="width:100%; height:100%; object-fit:cover; border-radius:10px; display:block;" />
+                </div>
+                <h3>Game Action</h3>
+            </div>
+
+            <div class="photo-item">
+                <div class="photo-placeholder">
+                    <img src="soccer-6.png" alt="Soccer 6" style="width:100%; height:100%; object-fit:cover; border-radius:10px; display:block;" />
+                </div>
+                <h3>Game Action</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <h2>Men's Soccer Photography Pricing</h2>
+        
+        <div class="pricing-info">
+            <h3 style="font-size: 32px; margin-bottom: 20px; color: #ffffff;">⚽ Soccer Packages</h3>
+            
+            <div class="price">$15 per game</div>
+            <p class="description">
+                Single game coverage with action shots, portraits, and game highlights.
+            </p>
+            
+            <div class="price">$85 per season</div>
+            <p class="description">
+                Season package (per player): includes all season games for one player, team photos, and comprehensive match coverage.
+            </p>
+            
+            <p style="margin-top: 30px; font-size: 16px; color: #87CEEB;">
+                All packages include high-resolution digital photos and quick turnaround time.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="index.html">← Back to Main Page</a>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Caden_clix12 Photography. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements that should animate on scroll
+        const animateElements = document.querySelectorAll('.section, .photo-item, .pricing-info');
+        animateElements.forEach(el => {
+            el.classList.add('animate-on-scroll');
+            observer.observe(el);
+        });
+
+        // Add staggered animation to photo items
+        const photoItems = document.querySelectorAll('.photo-item');
+        photoItems.forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Optimize image loading
+        document.querySelectorAll('img').forEach(img => {
+            // Remove any loading delays
+            img.style.opacity = '1';
+            img.style.transform = 'none';
+            img.style.transition = 'transform 0.3s ease';
+            
+            // Add error handling
+            img.addEventListener('error', function() {
+                console.log('Image failed to load:', this.src);
+            });
+        });
+
+        // Add hover effects to navigation
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

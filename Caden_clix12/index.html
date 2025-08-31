@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caden_clix12 - Premium Sports Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Caden_clix12</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Caden_clix12</span>
+                <span class="title-subtitle">Premium Sports Photography</span>
+            </h1>
+            <p class="hero-description">
+                Capturing every moment of athletic excellence with professional precision and artistic vision
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">View Services</a>
+                <a href="#gallery" class="btn btn-secondary">See Gallery</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <a href="football.html" class="floating-card" data-sport="football">
+                    <i class="fas fa-football-ball"></i>
+                    <span>Football</span>
+                </a>
+                <a href="soccer.html" class="floating-card" data-sport="soccer">
+                    <i class="fas fa-futbol"></i>
+                    <span>Soccer</span>
+                </a>
+                <a href="volleyball.html" class="floating-card" data-sport="volleyball">
+                    <i class="fas fa-volleyball-ball"></i>
+                    <span>Volleyball</span>
+                </a>
+                <a href="hockey.html" class="floating-card" data-sport="hockey">
+                    <i class="fas fa-hockey-puck"></i>
+                    <span>Hockey</span>
+                </a>
+            </div>
+            
+            <!-- Interactive Bubbles -->
+            <div class="bubble-container">
+                <div class="bubble" data-speed="0.5"></div>
+                <div class="bubble" data-speed="0.7"></div>
+                <div class="bubble" data-speed="0.3"></div>
+                <div class="bubble" data-speed="0.6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Professional photography packages tailored for every sport</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-sport="football">
+                    <div class="service-icon">
+                        <i class="fas fa-football-ball"></i>
+                    </div>
+                    <h3>Football Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$20</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$100</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Capture every touchdown, tackle, and triumphant moment with professional action shots
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Action Shots</span>
+                        <span class="feature">Player Portraits</span>
+                        <span class="feature">Team Photos</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='football.html'">Learn More</button>
+                </div>
+
+                <div class="service-card" data-sport="soccer">
+                    <div class="service-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Men's Soccer Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$15</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$85</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Showcase the skill and passion of soccer players with professional game coverage
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Goal Scoring</span>
+                        <span class="feature">Ball Control</span>
+                        <span class="feature">Team Strategy</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='soccer.html'">Learn More</button>
+                </div>
+
+                <div class="service-card" data-sport="volleyball">
+                    <div class="service-icon">
+                        <i class="fas fa-volleyball-ball"></i>
+                    </div>
+                    <h3>Volleyball Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$15</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$85</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Document the intensity and teamwork of volleyball matches with dynamic photography
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Spike Moments</span>
+                        <span class="feature">Team Coordination</span>
+                        <span class="feature">Defensive Plays</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='volleyball.html'">Learn More</button>
+                </div>
+
+                <div class="service-card" data-sport="hockey">
+                    <div class="service-icon">
+                        <i class="fas fa-hockey-puck"></i>
+                    </div>
+                    <h3>Hockey Photography</h3>
+                    <div class="service-pricing">
+                        <div class="price-item">
+                            <span class="price">$40</span>
+                            <span class="period">per game</span>
+                        </div>
+                        <div class="price-item featured">
+                            <span class="price">$150</span>
+                            <span class="period">per season</span>
+                        </div>
+                    </div>
+                    <p class="service-description">
+                        Capture the speed and intensity of hockey with professional action photography
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Fast Action</span>
+                        <span class="feature">Player Skills</span>
+                        <span class="feature">Team Dynamics</span>
+                        <span class="feature">Team Dynamics</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="window.location.href='hockey.html'">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-subtitle">Explore our collection of stunning sports photography</p>
+            </div>
+            
+            
+            
+            <div class="gallery-grid">
+                <a class="gallery-item" href="football.html" data-sport="football" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="football-1.png" alt="Football photo 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Football Action</h3>
+                        <p>Dynamic game moments</p>
+                    </div>
+                </a>
+                
+                <a class="gallery-item" href="soccer.html" data-sport="soccer" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="soccer-1.png" alt="Soccer 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Soccer Action</h3>
+                        <p>Skill and passion</p>
+                    </div>
+                </a>
+                
+                <a class="gallery-item" href="volleyball.html" data-sport="volleyball" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="volleyball-1.png" alt="volleyball 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Volleyball Action</h3>
+                        <p>Team coordination shots</p>
+                    </div>
+                </a>
+                
+                <a class="gallery-item" href="hockey.html" data-sport="hockey" style="text-decoration:none; color:inherit;">
+                    <div class="gallery-placeholder">
+                        <img src="Hockey-1.png" alt="Hockey 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Hockey Action</h3>
+                        <p>Speed and intensity</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to capture your sports moments? Let's connect!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="https://www.instagram.com/caden_clix12" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <span class="contact-link">@caden_clix12</span>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:cadencollier12@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <span class="contact-link">cadencollier12@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Booking</h3>
+                            <p>Available for events and seasons</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="email-contact">
+                        <h3>Ready to Book?</h3>
+                        <p>Click the button below to send me an email:</p>
+                        <div class="contact-buttons">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cadencollier12@gmail.com&su=Sports Photography Inquiry&body=Hi Caden,%0D%0A%0D%0AI'm interested in your sports photography services.%0D%0A%0D%0ASport: %0D%0AJersey Number: %0D%0ADate of Game: %0D%0AName: %0D%0APackage: (per game/season)%0D%0A%0D%0AThanks!" target="_blank" class="btn btn-primary gmail-btn">
+                                <i class="fab fa-google"></i>
+                                Open Gmail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Caden_clix12</h3>
+                    <p>Premium Sports Photography</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/caden_clix12" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:cadencollier12@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Caden_clix12 Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
